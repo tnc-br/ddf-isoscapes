@@ -18,8 +18,10 @@
 
 ## Local Runtime
 1- connect to your local  machine (cloudtop, gLinux ...)
+
 2 - Install Jupyter : 
 Install Jupyter on your local machine.
+
 3- Install and enable the jupyter_http_over_ws jupyter extension (one-time)
 The jupyter_http_over_ws extension is authored by the Colaboratory team and available on GitHub.
 
@@ -27,6 +29,7 @@ pip install jupyter_http_over_ws
 jupyter serverextension enable --py jupyter_http_over_ws
 
 4- run the script libraries.sh that you can copy from "https://github.com/kazob1998/DDF-ML-Model/blob/main/libraries.sh"
+
 
 5- Start server and authenticate: 
 New notebook servers are started normally, though you will need to set a flag to explicitly trust WebSocket connections from the Colaboratory frontend.
