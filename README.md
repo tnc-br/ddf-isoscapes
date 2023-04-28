@@ -9,8 +9,11 @@
 
 ## Github
 1- connect to your external colab. https://colab.research.google.com/
+
 2- from the window choose Github tab and select "Include private repos".
+
 3- Enter your GitHub username.
+
 4- main.ipynb should show up, open it.
 
 ## Local Runtime
