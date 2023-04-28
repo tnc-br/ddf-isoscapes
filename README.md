@@ -28,8 +28,10 @@ The jupyter_http_over_ws extension is authored by the Colaboratory team and avai
 pip install jupyter_http_over_ws
 jupyter serverextension enable --py jupyter_http_over_ws
 
-4- run the script libraries.sh that you can copy from "https://github.com/kazob1998/DDF-ML-Model/blob/main/libraries.sh"
-
+4- run the script libraries.sh to install the missing libraries:
+upload the script from "https://github.com/kazob1998/DDF-ML-Model/blob/main/libraries.sh"
+run "chmod +x ./libraries.sh"
+execute "./libraries.sh"
 
 5- Start server and authenticate: 
 New notebook servers are started normally, though you will need to set a flag to explicitly trust WebSocket connections from the Colaboratory frontend.
