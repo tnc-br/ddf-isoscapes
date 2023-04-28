@@ -14,7 +14,9 @@
 
 3- Enter your GitHub username.
 
-4- main.ipynb should show up, open it.
+4- main.ipynb should show up, if it does not, refresh the tab or open a new one, make sure that you are connected to your account.
+
+5- open it, and follow next steps.
 
 ## Local Runtime
 1- connect to your local  machine (cloudtop, gLinux ...)
