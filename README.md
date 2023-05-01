@@ -52,4 +52,4 @@ In Colaboratory, click the "Connect" button and select "Connect to local runtime
 
 # Known Issues:
 Please consult this document for known issues. Feel free to report one by adding a new row.
-go/ddf-github-known-issues
+http://go/ddf-github-known-issues
