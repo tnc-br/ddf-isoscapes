@@ -9,6 +9,7 @@
 
 ## Github
 1. connect to your external colab. https://colab.research.google.com/
+> **NOTE**: Googlers might be redirected to the internal Colab, so check that the URL matches the one above. Otherwise, there should be a toggle near the top that reads `Switch to prod`.
 
 2. from the window choose Github tab and select "Include private repos".
 
