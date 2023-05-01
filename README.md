@@ -22,8 +22,8 @@
 ## Local Runtime
 1. connect to your local  machine (cloudtop, gLinux ...)
 
-2. Install Jupyter : 
-Install Jupyter on your local machine.
+2. Install Jupyter and pip
+   * gLinux: Run `sudo apt install jupyter` and `sudo apt install pip`.
 
 3. Install and enable the `jupyter_http_over_ws jupyter` extension (one-time)
 The `jupyter_http_over_ws` extension is authored by the Colaboratory team and available on GitHub.
