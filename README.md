@@ -1,8 +1,16 @@
 # DDF-ML-Model
 
+# GitHub pre-reqs for Googlers
 
-# Intro:
+The steps are detailed at [go/github](https://opensource.corp.google.com/github/), what follows is a summary:
 
+1. Register GitHub account at [go/github](https://opensource.corp.google.com/github/).
+    1. Register your GitHub username above.
+    2. [Add your google.com email address to your GitHub account.](https://help.github.com/articles/adding-an-email-address-to-your-github-account/)
+    3. Set `git` to use your corp email address: `git config --global user.email "email@example.com"`
+    4. Enable 2FA in your GitHub account: [go/github-docs/2fa](https://goto.google.com/github-docs/2fa)
+2. Add GitHub username in [go/tnc-tracker](https://docs.google.com/spreadsheets/d/1TtjoT3b_iRmRWzap5MC-hLt7V9m2R4fzSfovLJLQOTQ/edit#gid=0).
+3. Get invited to https://github.com/kazob1998/DDF-ML-Model.
 
 
 # Steps to execute:
