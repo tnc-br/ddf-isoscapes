@@ -15,6 +15,11 @@ The steps are detailed at [go/github](https://opensource.corp.google.com/github/
 
 # Steps to execute:
 
+# Known Issues:
+Please consult this document for known issues. Feel free to report one by adding a new row.
+
+http://go/ddf-github-known-issues
+
 ## Github
 1. connect to your external colab. https://colab.research.google.com/
 > **NOTE**: Googlers might be redirected to the internal Colab, so check that the URL matches the one above. Otherwise, there should be a toggle near the top that reads `Switch to prod`.
@@ -61,8 +66,3 @@ Once the server has started, it will print a message with the initial backend UR
 6. Connect to the local runtime
 In Colaboratory, click the "Connect" button and select "Connect to local runtime...". Enter the URL from the previous step in the dialog that appears and click the "Connect" button. After this, you should now be connected to your local runtime.
 
-
-
-# Known Issues:
-Please consult this document for known issues. Feel free to report one by adding a new row.
-http://go/ddf-github-known-issues
