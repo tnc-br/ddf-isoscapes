@@ -32,7 +32,14 @@ http://go/ddf-github-known-issues
 
 5. open it, and follow next steps.
 
-## Local Runtime
+## Using GDrive
+1. After [connecting to colab](#github), click "Connect > Connect to a hosted runtime" (this is the default behavior for "Connect").
+
+2. Replace the parameters in the [Imports](https://colab.research.google.com/github/kazob1998/DDF-ML-Model/blob/main/main.ipynb#scrollTo=K0tG92Yw1CYk&line=8&uniqifier=1) with the location of the Amazon data files. (By default, the parameters point to the top level of "MyDrive", assuming external folks don’t have access to our internal shared drive. Replace the prefix of these params with `"/content/drive/Shareddrives/TNC Fellowship 🌳/4. Isotope Research & Signals/code/amazon_rainforest_files"` to point to the shared drive we own. For example, `RASTER_BASE = "/content/drive/Shareddrives/TNC Fellowship 🌳/4. Isotope Research & Signals/code/amazon_rainforest_files/amazon_rasters")
+
+3. Run as normal. When you reach [this part of the code](https://colab.research.google.com/github/kazob1998/DDF-ML-Model/blob/main/main.ipynb#scrollTo=RQC9hqqUWso9&line=3&uniqifier=1), grant it permission to access GDrive.
+
+## Using Local Runtime
 1. connect to your local  machine (cloudtop, gLinux ...)
 
 2. Install Jupyter and pip
