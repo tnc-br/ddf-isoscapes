@@ -75,4 +75,4 @@ In Colaboratory, click the "Connect" button and select "Connect to local runtime
 
 # Editing
 
-One option is to use VSCode, which has Jupyter support. See go/vscode/install.
+One option is to use VSCode, which has Jupyter support. Googlers, see [go/vscode/install](https://go/vscode/install) and remember to [exclude working directories from backups](https://support.google.com/techstop/answer/3288893).
