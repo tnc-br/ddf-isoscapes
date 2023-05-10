@@ -1,4 +1,6 @@
-# DDF-ML-Model
+# ddf-isoscapes
+
+This repo contains different Colab notebooks used to generate isoscape models.
 
 # GitHub pre-reqs for Googlers
 
@@ -12,15 +14,14 @@ The steps are detailed at [go/github](https://opensource.corp.google.com/github/
 2. Add GitHub username in [go/tnc-tracker](https://docs.google.com/spreadsheets/d/1TtjoT3b_iRmRWzap5MC-hLt7V9m2R4fzSfovLJLQOTQ/edit#gid=0).
 3. Get invited to https://github.com/kazob1998/DDF-ML-Model.
 
-
-# Steps to execute:
-
-# Known Issues:
+# Known Issues
 Please consult this document for known issues. Feel free to report one by adding a new row.
 
 http://go/ddf-github-known-issues
 
-## Github
+# Running the Colabs
+
+## Using Github
 1. connect to your external colab. https://colab.research.google.com/
 > **NOTE**: Googlers might be redirected to the internal Colab, so check that the URL matches the one above. Otherwise, there should be a toggle near the top that reads `Switch to prod`.
 
@@ -33,7 +34,7 @@ http://go/ddf-github-known-issues
 5. open it, and follow next steps.
 
 ## Using GDrive
-1. After [connecting to colab](#github), click "Connect > Connect to a hosted runtime" (this is the default behavior for "Connect").
+1. After [connecting to colab](#using-github), click "Connect > Connect to a hosted runtime" (this is the default behavior for "Connect").
 
 2. Replace the parameters in the [Imports](https://colab.research.google.com/github/kazob1998/DDF-ML-Model/blob/main/main.ipynb#scrollTo=K0tG92Yw1CYk&line=8&uniqifier=1) with the location of the Amazon data files. (By default, the parameters point to the top level of "MyDrive", assuming external folks don’t have access to our internal shared drive. Replace the prefix of these params with `"/content/drive/Shareddrives/TNC Fellowship 🌳/4. Isotope Research & Signals/code/amazon_rainforest_files"` to point to the shared drive we own. For example, `RASTER_BASE = "/content/drive/Shareddrives/TNC Fellowship 🌳/4. Isotope Research & Signals/code/amazon_rainforest_files/amazon_rasters")
 
@@ -53,7 +54,7 @@ pip install jupyter_http_over_ws
 jupyter serverextension enable --py jupyter_http_over_ws
 ```
 
-4. run the script libraries.sh to install the missing libraries:
+4. (For XGBoost only) run the script libraries.sh to install the missing libraries:
    1. upload the script from https://github.com/kazob1998/DDF-ML-Model/blob/main/libraries.sh
    2. run `chmod +x ./libraries.sh`
    3. execute `./libraries.sh`
