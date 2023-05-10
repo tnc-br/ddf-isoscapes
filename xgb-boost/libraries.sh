@@ -6,6 +6,9 @@ export CPLUS_INCLUDE_PATH=/usr/include/gdal
 export C_INCLUDE_PATH=/usr/include/gdal
 pip install GDAL==$(gdal-config --version) --global-option=build_ext --global- option="-I/usr/include/gdal"
 
+# xgboost dependency that isn't picked up by xgboost
+sudo apt install python3-sklearn
+
 #import pandas as pd
 pip install pandas
 
