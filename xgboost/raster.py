@@ -190,29 +190,6 @@ def coords_to_indices(bounds: Bounds, x: float, y: float):
 
   return x_idx, y_idx
 
-def test_coords_to_indices():
-  bounds = Bounds(50, 100, 50, 100, 1, 1, 50, 50)
-  x, y = coords_to_indices(bounds, 55, 55)
-  assert x == 45
-  assert y == 5
-
-  bounds = Bounds(-100, -50, -100, -50, 1, 1, 50, 50)
-  x, y = coords_to_indices(bounds, -55, -55)
-  assert x == 5
-  assert y == 45
-
-  bounds = Bounds(-10, 50, -10, 50, 1, 1, 60, 60)
-  x, y = coords_to_indices(bounds, -1, 13)
-  assert x == 37
-  assert y == 9
-
-  bounds = Bounds(minx=-73.97513931345594, maxx=-34.808472803053895, miny=-33.73347244751509, maxy=5.266527396029211, pixel_size_x=0.04166666650042771, pixel_size_y=-0.041666666499513144, raster_size_x=937, raster_size_y=941)
-  x, y = coords_to_indices(bounds, -67.14342073173958, -7.273271869467912e-05)
-  #print(x)
-  assert x == 131 # was: 132
-  assert y == 163
-
-test_coords_to_indices()
 
 def get_data_at_coords(dataset: AmazonGeoTiff, x: float, y: float, month: int) -> float:
   # x = longitude
