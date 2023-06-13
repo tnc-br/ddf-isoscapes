@@ -42,24 +42,43 @@ http://go/ddf-github-known-issues
 
 ## Using Local Runtime
 1. connect to your local  machine (cloudtop, gLinux ...)
+   git clone a new branch of this project into a local folder
+
 
 2. Install Jupyter and pip
    * gLinux: Run `sudo apt install jupyter` and `sudo apt install pip`.
 
+
 3. Install and enable the `jupyter_http_over_ws jupyter` extension (one-time)
 The `jupyter_http_over_ws` extension is authored by the Colaboratory team and available on GitHub.
+Note that you may need --break-system-packages to install jupyter on system level packages.
 
 ```
-pip install jupyter_http_over_ws
+pip install jupyter_http_over_ws --break-system-packages
 jupyter serverextension enable --py jupyter_http_over_ws
 ```
 
-4. (For XGBoost only) run the script libraries.sh to install the missing libraries:
+4. (optional) Install virtualenv to create a virtual python env that allows pip installs to run within the notebook
+
+```
+sudo apt install python3.11-venv
+python3 -m venv ~/py --system-site-packages
+source ~/py/bin/activate
+python -m ipykernel install --user --name=py
+```
+
+You may also optionally run 'jupyter notebook --generate-config' and set the line c.MutiKernelManager.default_kernel_name='py'
+
+This will automatically choose the py virtual environment as the default kernel in jupyter.
+
+
+
+5. (For XGBoost only) run the script libraries.sh to install the missing libraries:
    1. upload the script from https://github.com/kazob1998/DDF-ML-Model/blob/main/libraries.sh
    2. run `chmod +x ./libraries.sh`
    3. execute `./libraries.sh`
 
-5. Start server and authenticate: 
+6. Start server and authenticate: 
 New notebook servers are started normally, though you will need to set a flag to explicitly trust WebSocket connections from the Colaboratory frontend.
 
 ```
