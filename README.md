@@ -120,9 +120,12 @@ runtimes.
 2. In the **Parent Directories** cell, set `USE_GDRIVE = True`. If using your
    own GDrive, set `USE_SHARED_GDRIVE = False` and
    set `PERSONAL_GDRIVE_PARENT_DIR` to the name of the folder containing all the
-   data. Otherwise, set `USE_SHARED_GDRIVE = True` and set `SHARED_GDRIVE_PARENT_DIR` to the folder in the shared drive containing all the data, prefixed by the shared drive name.
+   data. Otherwise, set `USE_SHARED_GDRIVE = True` and
+   set `SHARED_GDRIVE_PARENT_DIR` to the folder in the shared drive containing
+   all the data, prefixed by the shared drive name.
 
-3. Run as normal. When you rach the **Mount GDrive** cell, grant Colab permission to access GDrive.
+3. Run as normal. When you reach the **Mount GDrive** cell, grant Colab
+   permission to access GDrive.
 
 # Editing
 
