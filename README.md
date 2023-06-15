@@ -34,7 +34,8 @@ http://go/ddf-github-known-issues
 1. Connect to your external Colab. https://colab.research.google.com/
 
 > **NOTE**: Googlers might be redirected to the internal Colab, so check that
-> the URL matches the one above. Otherwise, there should be a toggle near the top
+> the URL matches the one above. Otherwise, there should be a toggle near the
+> top
 > that reads `Switch to prod`.
 
 2. From the window choose GitHub tab and select `Include private repos`.
@@ -42,14 +43,16 @@ http://go/ddf-github-known-issues
 3. Enter your GitHub username.
 
 4. `main.ipynb` should show up; if it does not, refresh the tab or open a new
-   one, making sure that you are connected to your account. Open it, and follow next steps.
+   one, making sure that you are connected to your account. Open it, and follow
+   next steps.
 
 ## Using Local Runtimes
 
 Steps 1-4 only need to be run once.
 
 1. Connect to your local machine (cloudtop, gLinux ...)
-   [`git clone`](https://git-scm.com/docs/git-clone) a new branch of this project into a local folder
+   [`git clone`](https://git-scm.com/docs/git-clone) a new branch of this
+   project into a local folder
 
 2. Install Jupyter and pip
     * gLinux: Run `sudo apt install jupyter` and `sudo apt install pip`.
@@ -107,25 +110,19 @@ now be connected to your local runtime.
 
 ## Using GDrive in hosted runtimes
 
-GDrive is currently not supported in local runtimes, but can be used in hosted runtimes. 
+GDrive is currently not supported in local runtimes, but can be used in hosted
+runtimes.
 
 1. After [connecting to colab](#using-github),
    click `Connect > Connect to a hosted runtime` (you may also just
    click `Connect`).
 
-2. Replace the parameters in
-   the [Imports](https://colab.research.google.com/github/kazob1998/DDF-ML-Model/blob/main/main.ipynb#scrollTo=K0tG92Yw1CYk&line=8&uniqifier=1)
-   with the location of the Amazon data files. (By default, the parameters point
-   to the top level of `MyDrive`, assuming external folks don’t have access to
-   our internal shared drive. Replace the prefix of these params
-   with `"/content/drive/Shareddrives/TNC Fellowship 🌳/4. Isotope Research & Signals/code/amazon_rainforest_files"`
-   to point to the shared drive we own. For example, `RASTER_BASE = "
-   /content/drive/Shareddrives/TNC Fellowship 🌳/4. Isotope Research &
-   Signals/code/amazon_rainforest_files/amazon_rasters"`)
+2. In the **Parent Directories** cell, set `USE_GDRIVE = True`. If using your
+   own GDrive, set `USE_SHARED_GDRIVE = False` and
+   set `PERSONAL_GDRIVE_PARENT_DIR` to the name of the folder containing all the
+   data. Otherwise, set `USE_SHARED_GDRIVE = True` and set `SHARED_GDRIVE_PARENT_DIR` to the folder in the shared drive containing all the data, prefixed by the shared drive name.
 
-3. Run as normal. When you
-   reach [this part of the code](https://colab.research.google.com/github/kazob1998/DDF-ML-Model/blob/main/main.ipynb#scrollTo=RQC9hqqUWso9&line=3&uniqifier=1),
-   grant it permission to access GDrive.
+3. Run as normal. When you rach the **Mount GDrive** cell, grant Colab permission to access GDrive.
 
 # Editing
 
