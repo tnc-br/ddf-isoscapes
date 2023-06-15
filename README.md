@@ -31,46 +31,24 @@ http://go/ddf-github-known-issues
 
 ## Using GitHub
 
-1. connect to your external Colab. https://colab.research.google.com/
+1. Connect to your external Colab. https://colab.research.google.com/
 
 > **NOTE**: Googlers might be redirected to the internal Colab, so check that
 > the URL matches the one above. Otherwise, there should be a toggle near the top
 > that reads `Switch to prod`.
 
-2. From the window choose GitHub tab and select "Include private repos".
+2. From the window choose GitHub tab and select `Include private repos`.
 
 3. Enter your GitHub username.
 
-4. `main.ipynb` should show up, if it does not, refresh the tab or open a new
-   one, make sure that you are connected to your account.
+4. `main.ipynb` should show up; if it does not, refresh the tab or open a new
+   one, making sure that you are connected to your account. Open it, and follow next steps.
 
-5. open it, and follow next steps.
-
-## Using GDrive
-
-1. After [connecting to colab](#using-github),
-   click `Connect > Connect to a hosted runtime` (you may also just
-   click `Connect`).
-
-2. Replace the parameters in
-   the [Imports](https://colab.research.google.com/github/kazob1998/DDF-ML-Model/blob/main/main.ipynb#scrollTo=K0tG92Yw1CYk&line=8&uniqifier=1)
-   with the location of the Amazon data files. (By default, the parameters point
-   to the top level of `MyDrive`, assuming external folks don’t have access to
-   our internal shared drive. Replace the prefix of these params
-   with `"/content/drive/Shareddrives/TNC Fellowship 🌳/4. Isotope Research & Signals/code/amazon_rainforest_files"`
-   to point to the shared drive we own. For example, `RASTER_BASE = "
-   /content/drive/Shareddrives/TNC Fellowship 🌳/4. Isotope Research &
-   Signals/code/amazon_rainforest_files/amazon_rasters"`)
-
-3. Run as normal. When you
-   reach [this part of the code](https://colab.research.google.com/github/kazob1998/DDF-ML-Model/blob/main/main.ipynb#scrollTo=RQC9hqqUWso9&line=3&uniqifier=1),
-   grant it permission to access GDrive.
-
-## Using Local Runtime
+## Using Local Runtimes
 
 Steps 1-4 only need to be run once.
 
-1. connect to your local machine (cloudtop, gLinux ...)
+1. Connect to your local machine (cloudtop, gLinux ...)
    [`git clone`](https://git-scm.com/docs/git-clone) a new branch of this project into a local folder
 
 2. Install Jupyter and pip
@@ -126,6 +104,28 @@ this in the next step.
 select `Connect to local runtime...`. Enter the URL from the previous step in
 the dialog that appears and click the `Connect` button. After this, you should
 now be connected to your local runtime.
+
+## Using GDrive in hosted runtimes
+
+GDrive is currently not supported in local runtimes, but can be used in hosted runtimes. 
+
+1. After [connecting to colab](#using-github),
+   click `Connect > Connect to a hosted runtime` (you may also just
+   click `Connect`).
+
+2. Replace the parameters in
+   the [Imports](https://colab.research.google.com/github/kazob1998/DDF-ML-Model/blob/main/main.ipynb#scrollTo=K0tG92Yw1CYk&line=8&uniqifier=1)
+   with the location of the Amazon data files. (By default, the parameters point
+   to the top level of `MyDrive`, assuming external folks don’t have access to
+   our internal shared drive. Replace the prefix of these params
+   with `"/content/drive/Shareddrives/TNC Fellowship 🌳/4. Isotope Research & Signals/code/amazon_rainforest_files"`
+   to point to the shared drive we own. For example, `RASTER_BASE = "
+   /content/drive/Shareddrives/TNC Fellowship 🌳/4. Isotope Research &
+   Signals/code/amazon_rainforest_files/amazon_rasters"`)
+
+3. Run as normal. When you
+   reach [this part of the code](https://colab.research.google.com/github/kazob1998/DDF-ML-Model/blob/main/main.ipynb#scrollTo=RQC9hqqUWso9&line=3&uniqifier=1),
+   grant it permission to access GDrive.
 
 # Editing
 
