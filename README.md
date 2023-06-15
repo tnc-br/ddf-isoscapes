@@ -136,3 +136,9 @@ Intellij also has Jupyter support.
 
 Remember
 to [exclude working directories from backups](https://support.google.com/techstop/answer/3288893).
+
+# Viewing diffs on GitHub
+
+Consider [enabling Rich Jupyter Notebook Diffs](https://github.blog/changelog/2023-03-01-feature-preview-rich-jupyter-notebook-diffs/)
+via [Feature Previews](https://docs.github.com/en/get-started/using-github/exploring-early-access-releases-with-feature-preview#exploring-beta-releases-with-feature-preview)
+to make Notebook diffs easy to read.
