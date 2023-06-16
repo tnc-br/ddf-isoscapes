@@ -1,0 +1,8 @@
+jupyter
+jupyter_http_over_ws
+gdal
+pandas
+tqdm
+xgboost
+opencv-python
+matplotlib
