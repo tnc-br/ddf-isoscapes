@@ -46,7 +46,20 @@ http://go/ddf-github-known-issues
    one, making sure that you are connected to your account. Open it, and follow
    next steps.
 
-## Using Local Runtimes
+## Using local runtimes, scripted setup
+
+1. `git clone` to a local folder.
+
+2. Run `chmod +x setup.sh`.
+
+3. Run `./setup.sh`.
+
+4. Copy the provided URL and proceed with the next sections.
+
+## Using local runtimes, manual setup
+
+This assumes `python3` is installed. The following steps might not work for python2
+without additional steps.
 
 Steps 1-4 only need to be run once.
 
