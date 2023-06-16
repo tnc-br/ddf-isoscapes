@@ -7,19 +7,20 @@ sudo apt-get update
 # Tracked in: https://github.com/tnc-br/ddf-isoscapes/issues/73
 sudo apt install python3-sklearn
 
+# Used to install packages directly into virtual environments
+sudo apt-get install pipx
+
+# Used to install GDAL
 sudo apt-get install gdal-bin
 sudo apt-get install libgdal-dev
 export CPLUS_INCLUDE_PATH=/usr/include/gdal
 export C_INCLUDE_PATH=/usr/include/gdal
 
+# Virtual environment used to run local runtime
 python3 -m venv pyEnv
 source pyEnv/bin/activate
 python -m pip install -r requirements.txt
 
-python -m pip install GDAL==$(gdal-config --version) --global-option=build_ext --global- option="-I/usr/include/gdal"
+python -m pip install GDAL==$(gdal-config --version) --global-option=build_ext --global-
 
-# Used to install packages directly into virtual environments.
-sudo apt-get install pipx
-
-python -m jupyter serverextension enable --py jupyter_http_over_ws
 python -m jupyter notebook --NotebookApp.allow_origin='https://colab.research.google.com' --port=8888 --NotebookApp.port_retries=0
