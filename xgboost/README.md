@@ -8,7 +8,9 @@ see: https://xgboost.readthedocs.io/en/stable/tutorials/model.html
 
 # Running `main.ipynb` Notebook
 
-See `ddf-isoscapes/README.md` for details on runtimes.
+See `ddf-isoscapes/README.md` for details on using different runtimes.
+
+Running `chmod +x setup.sh && ./setup.sh` should start a Jupyter server that can be used as a local runtime.
 
 1. Run `libraries.sh`. Note you'll be asked for a `sudo` password.
 2. Point `RASTER_BASE`, `SAMPLE_DATA_BASE`, `TEST_DATA_BASE`, `ANIMATIONS_BASE`,
