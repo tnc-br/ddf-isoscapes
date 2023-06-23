@@ -1,0 +1,6 @@
+jupyter
+pandas
+tqdm
+xgboost
+opencv-python
+matplotlib
