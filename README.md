@@ -46,7 +46,7 @@ http://go/ddf-github-known-issues
    one, making sure that you are connected to your account. Open it, and follow
    next steps.
 
-## Using local runtimes, scripted setup
+## Using local runtimes
 
 
 Please use the official docker container for running a local runtime.
