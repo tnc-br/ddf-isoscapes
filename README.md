@@ -46,78 +46,17 @@ http://go/ddf-github-known-issues
    one, making sure that you are connected to your account. Open it, and follow
    next steps.
 
-## Using local runtimes, scripted setup
+## Using local runtimes
 
 
-This assumes `python3` is installed.
-
-
-1. `git clone` to a local folder.
-
-2. Run `chmod +x setup.sh`.
-
-3. Run `./setup.sh`.
-
-4. Copy the provided URL and proceed with the next sections.
-
-## Using local runtimes, manual setup
-
-Steps 1-4 only need to be run once.
-
-1. Connect to your local machine (cloudtop, gLinux ...)
-   [`git clone`](https://git-scm.com/docs/git-clone) a new branch of this
-   project into a local folder
-
-2. Install Jupyter and pip
-    * gLinux: Run `sudo apt install jupyter` and `sudo apt install pip`.
-
-3. Install and enable the `jupyter_http_over_ws jupyter` extension.
-   The `jupyter_http_over_ws` extension is authored by the Colab team and
-   available on GitHub.
-   Note that you may need `--break-system-packages` to install jupyter on system
-   level packages.
-
-```
-pip install jupyter_http_over_ws --break-system-packages
-jupyter serverextension enable --py jupyter_http_over_ws
-```
-
-4. (Optional) Install `virtualenv` to create a virtual python env that
-   allows `pip install` to run within the Notebook.
-
-```
-sudo apt install python3.11-venv
-python3 -m venv ~/py --system-site-packages
-source ~/py/bin/activate
-python -m ipykernel install --user --name=py
-```
-
-You may also optionally run `jupyter notebook --generate-config` and set the
-line `c.MutiKernelManager.default_kernel_name='py'`. This will automatically
-choose the py virtual environment as the default kernel in jupyter.
-
-5. (For `./xgboost` only) Run the script `libraries.sh` to install necessary
-   libraries:
-    1. `cd` to the directory where you cloned the git repo.
-    2. run `chmod +x ./libraries.sh`
-    3. execute `./libraries.sh`
-
-6. Start server and authenticate:
-   New notebook servers are started normally, though you will need to set a flag
-   to explicitly trust WebSocket connections from the Colaboratory frontend.
-
-```
-jupyter notebook \
-  --NotebookApp.allow_origin='https://colab.research.google.com' \
-  --port=8888 \
-  --NotebookApp.port_retries=0
-```
+Please use the official docker container for running a local runtime.
+See [`the official colab instructions`](https://research.google.com/colaboratory/local-runtimes.html) for more details.
 
 Once the server has started, it will print a message with the initial backend
 URL used for authentication. Make a copy of this URL as you'll need to provide
 this in the next step.
 
-7.Connect to the local runtime. In Colab, click the `Connect` button and
+In Colab, click the `Connect` button and
 select `Connect to local runtime...`. Enter the URL from the previous step in
 the dialog that appears and click the `Connect` button. After this, you should
 now be connected to your local runtime.
